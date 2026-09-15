@@ -1,0 +1,739 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AgriRent - Farm Machinery Rental</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Typography Plugin -->
+    <script>
+        tailwind.config = {
+            plugins: [
+                function({ addComponents }) {
+                    addComponents({
+                        '.prose': {
+                            'max-width': '65ch',
+                            'color': '#374151',
+                            'line-height': '1.75'
+                        }
+                    })
+                }
+            ]
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ================= HEADER ================= -->
+    <header class="bg-green-700 text-white shadow-lg">
+
+        <div class="max-w-7xl mx-auto px-6 py-5 flex
+                    flex-col md:flex-row
+                    justify-between items-center gap-4">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="text-4xl">🚜</div>
+
+                <div>
+                    <h1 class="text-2xl font-bold">
+                        AgriRent
+                    </h1>
+
+                    <p class="text-green-100 text-sm">
+                        Smart Farm Machinery Rental
+                    </p>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-6 font-medium">
+
+                    <li>
+                        <a href="#home"
+                           class="hover:text-yellow-300 transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#machines"
+                           class="hover:text-yellow-300 transition">
+                            Machinery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#ai"
+                           class="hover:text-yellow-300 transition">
+                            AI Assistant
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about"
+                           class="hover:text-yellow-300 transition">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact"
+                           class="hover:text-yellow-300 transition">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home"
+                 class="bg-gradient-to-r from-green-800
+                        to-green-500 text-white">
+
+            <div class="max-w-7xl mx-auto px-6 py-20
+                        grid md:grid-cols-2 gap-12
+                        items-center">
+
+                <!-- Hero Text -->
+                <div>
+
+                    <span class="bg-yellow-400 text-green-900
+                                 px-4 py-2 rounded-full
+                                 text-sm font-bold">
+
+                        🌱 Smart Agriculture
+                    </span>
+
+                    <h2 class="text-4xl md:text-6xl
+                               font-bold mt-6 leading-tight">
+
+                        Rent the Right
+                        <span class="text-yellow-300">
+                            Farm Machinery
+                        </span>
+
+                    </h2>
+
+                    <p class="mt-6 text-lg text-green-50">
+
+                        Find, compare and rent tractors, harvesters,
+                        seeders, sprayers and other agricultural
+                        equipment near you.
+
+                    </p>
+
+                    <div class="mt-8 flex flex-wrap gap-4">
+
+                        <a href="#machines"
+                           class="bg-yellow-400
+                                  text-green-900
+                                  px-6 py-3
+                                  rounded-lg
+                                  font-bold
+                                  hover:bg-yellow-300
+                                  transition">
+
+                            Find Machinery
+                        </a>
+
+                        <a href="#ai"
+                           class="border-2 border-white
+                                  px-6 py-3
+                                  rounded-lg
+                                  font-bold
+                                  hover:bg-white
+                                  hover:text-green-700
+                                  transition">
+
+                            🤖 Ask AI Assistant
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Illustration -->
+                <div class="flex justify-center">
+
+                    <div class="bg-white/10 backdrop-blur-md
+                                rounded-3xl p-10
+                                text-center shadow-2xl">
+
+                        <div class="text-9xl">
+                            🚜
+                        </div>
+
+                        <h3 class="text-2xl font-bold mt-4">
+                            Smart Farming Starts Here
+                        </h3>
+
+                        <p class="text-green-100 mt-2">
+                            Affordable • Nearby • Intelligent
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHY AGRIRENT -->
+        <section id="about"
+                 class="max-w-7xl mx-auto px-6 py-16">
+
+            <div class="prose mx-auto text-center">
+
+                <h2 class="text-3xl font-bold text-green-800">
+                    Why Choose AgriRent?
+                </h2>
+
+                <p class="text-lg">
+                    AgriRent connects farmers with machinery owners
+                    through an easy-to-use digital platform. Our
+                    AI-powered system helps farmers select suitable
+                    equipment based on their crop, land size,
+                    farming activity, budget and location.
+                </p>
+
+            </div>
+
+
+            <!-- Feature Cards -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4
+                        gap-6 mt-12">
+
+                <article class="bg-white p-6 rounded-xl
+                                shadow hover:shadow-xl
+                                transition">
+
+                    <div class="text-4xl">📍</div>
+
+                    <h3 class="text-xl font-bold mt-4">
+                        Nearby Machinery
+                    </h3>
+
+                    <p class="mt-3 text-gray-600">
+                        Discover agricultural equipment available
+                        near your farm.
+                    </p>
+
+                </article>
+
+
+                <article class="bg-white p-6 rounded-xl
+                                shadow hover:shadow-xl
+                                transition">
+
+                    <div class="text-4xl">💰</div>
+
+                    <h3 class="text-xl font-bold mt-4">
+                        Affordable Rentals
+                    </h3>
+
+                    <p class="mt-3 text-gray-600">
+                        Compare rental prices and select equipment
+                        within your budget.
+                    </p>
+
+                </article>
+
+
+                <article class="bg-white p-6 rounded-xl
+                                shadow hover:shadow-xl
+                                transition">
+
+                    <div class="text-4xl">🤖</div>
+
+                    <h3 class="text-xl font-bold mt-4">
+                        AI Recommendations
+                    </h3>
+
+                    <p class="mt-3 text-gray-600">
+                        Get intelligent machinery recommendations
+                        based on your farming requirements.
+                    </p>
+
+                </article>
+
+
+                <article class="bg-white p-6 rounded-xl
+                                shadow hover:shadow-xl
+                                transition">
+
+                    <div class="text-4xl">📅</div>
+
+                    <h3 class="text-xl font-bold mt-4">
+                        Easy Booking
+                    </h3>
+
+                    <p class="mt-3 text-gray-600">
+                        Check availability and book equipment
+                        for your preferred date.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- MACHINERY SECTION -->
+        <section id="machines"
+                 class="bg-gray-100 py-16">
+
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="text-center">
+
+                    <h2 class="text-3xl font-bold text-green-800">
+                        Popular Farm Machinery
+                    </h2>
+
+                    <p class="mt-3 text-gray-600">
+                        Browse equipment available for rental.
+                    </p>
+
+                </div>
+
+
+                <div class="grid sm:grid-cols-2
+                            lg:grid-cols-4 gap-6 mt-10">
+
+
+                    <!-- Tractor -->
+                    <article class="bg-white rounded-xl
+                                    overflow-hidden shadow
+                                    hover:-translate-y-2
+                                    transition">
+
+                        <div class="bg-green-100
+                                    h-40 flex items-center
+                                    justify-center">
+
+                            <span class="text-7xl">🚜</span>
+
+                        </div>
+
+                        <div class="p-5">
+
+                            <h3 class="text-xl font-bold">
+                                Tractor
+                            </h3>
+
+                            <p class="text-gray-600 mt-2">
+                                Suitable for ploughing,
+                                cultivation and transportation.
+                            </p>
+
+                            <div class="flex justify-between
+                                        items-center mt-5">
+
+                                <span class="font-bold
+                                             text-green-700">
+                                    ₹1,200/day
+                                </span>
+
+                                <button class="bg-green-600
+                                               text-white
+                                               px-4 py-2
+                                               rounded-lg
+                                               hover:bg-green-700">
+
+                                    Rent
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Harvester -->
+                    <article class="bg-white rounded-xl
+                                    overflow-hidden shadow
+                                    hover:-translate-y-2
+                                    transition">
+
+                        <div class="bg-yellow-100
+                                    h-40 flex items-center
+                                    justify-center">
+
+                            <span class="text-7xl">🌾</span>
+
+                        </div>
+
+                        <div class="p-5">
+
+                            <h3 class="text-xl font-bold">
+                                Combine Harvester
+                            </h3>
+
+                            <p class="text-gray-600 mt-2">
+                                Efficient harvesting and
+                                threshing equipment.
+                            </p>
+
+                            <div class="flex justify-between
+                                        items-center mt-5">
+
+                                <span class="font-bold
+                                             text-green-700">
+                                    ₹3,500/day
+                                </span>
+
+                                <button class="bg-green-600
+                                               text-white
+                                               px-4 py-2
+                                               rounded-lg
+                                               hover:bg-green-700">
+
+                                    Rent
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Seeder -->
+                    <article class="bg-white rounded-xl
+                                    overflow-hidden shadow
+                                    hover:-translate-y-2
+                                    transition">
+
+                        <div class="bg-blue-100
+                                    h-40 flex items-center
+                                    justify-center">
+
+                            <span class="text-7xl">🌱</span>
+
+                        </div>
+
+                        <div class="p-5">
+
+                            <h3 class="text-xl font-bold">
+                                Seed Drill
+                            </h3>
+
+                            <p class="text-gray-600 mt-2">
+                                Helps place seeds at the correct
+                                depth and spacing.
+                            </p>
+
+                            <div class="flex justify-between
+                                        items-center mt-5">
+
+                                <span class="font-bold
+                                             text-green-700">
+                                    ₹800/day
+                                </span>
+
+                                <button class="bg-green-600
+                                               text-white
+                                               px-4 py-2
+                                               rounded-lg
+                                               hover:bg-green-700">
+
+                                    Rent
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Sprayer -->
+                    <article class="bg-white rounded-xl
+                                    overflow-hidden shadow
+                                    hover:-translate-y-2
+                                    transition">
+
+                        <div class="bg-purple-100
+                                    h-40 flex items-center
+                                    justify-center">
+
+                            <span class="text-7xl">💧</span>
+
+                        </div>
+
+                        <div class="p-5">
+
+                            <h3 class="text-xl font-bold">
+                                Crop Sprayer
+                            </h3>
+
+                            <p class="text-gray-600 mt-2">
+                                Useful for applying pesticides,
+                                fertilizers and nutrients.
+                            </p>
+
+                            <div class="flex justify-between
+                                        items-center mt-5">
+
+                                <span class="font-bold
+                                             text-green-700">
+                                    ₹600/day
+                                </span>
+
+                                <button class="bg-green-600
+                                               text-white
+                                               px-4 py-2
+                                               rounded-lg
+                                               hover:bg-green-700">
+
+                                    Rent
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI ASSISTANT -->
+        <section id="ai"
+                 class="max-w-5xl mx-auto px-6 py-16">
+
+            <div class="bg-green-800 text-white
+                        rounded-3xl p-8 md:p-12
+                        shadow-xl">
+
+                <div class="text-center">
+
+                    <div class="text-5xl">
+                        🤖
+                    </div>
+
+                    <h2 class="text-3xl md:text-4xl
+                               font-bold mt-4">
+
+                        Ask Our AI Machinery Assistant
+                    </h2>
+
+                    <p class="mt-4 text-green-100">
+
+                        Tell us about your farm and our AI will
+                        help you find suitable machinery.
+
+                    </p>
+
+                </div>
+
+
+                <div class="mt-8 grid md:grid-cols-2 gap-4">
+
+                    <input type="text"
+                           placeholder="Crop (e.g. Paddy)"
+                           class="p-4 rounded-lg
+                                  text-gray-800
+                                  outline-none">
+
+                    <input type="number"
+                           placeholder="Land size in acres"
+                           class="p-4 rounded-lg
+                                  text-gray-800
+                                  outline-none">
+
+                    <input type="text"
+                           placeholder="Farming activity"
+                           class="p-4 rounded-lg
+                                  text-gray-800
+                                  outline-none">
+
+                    <input type="number"
+                           placeholder="Your budget"
+                           class="p-4 rounded-lg
+                                  text-gray-800
+                                  outline-none">
+
+                </div>
+
+
+                <button class="w-full mt-5
+                               bg-yellow-400
+                               text-green-900
+                               py-4 rounded-lg
+                               font-bold text-lg
+                               hover:bg-yellow-300
+                               transition">
+
+                    🔍 Get AI Recommendation
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CALL TO ACTION -->
+        <section class="bg-yellow-400 py-12">
+
+            <div class="max-w-5xl mx-auto px-6
+                        text-center">
+
+                <h2 class="text-3xl font-bold
+                           text-green-900">
+
+                    Have Machinery to Rent?
+
+                </h2>
+
+                <p class="mt-3 text-green-900">
+
+                    List your agricultural equipment and
+                    connect with farmers in your area.
+
+                </p>
+
+                <button class="mt-6 bg-green-800
+                               text-white px-8 py-3
+                               rounded-lg font-bold
+                               hover:bg-green-900">
+
+                    List Your Machinery
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contact"
+            class="bg-gray-900 text-gray-300">
+
+        <div class="max-w-7xl mx-auto px-6 py-12
+                    grid md:grid-cols-3 gap-8">
+
+            <!-- About -->
+            <div>
+
+                <h3 class="text-2xl font-bold text-white">
+                    🚜 AgriRent
+                </h3>
+
+                <p class="mt-4">
+                    An AI-powered farm machinery rental
+                    platform designed to make agricultural
+                    equipment accessible and affordable.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div>
+
+                <h3 class="text-lg font-bold text-white">
+                    Quick Links
+                </h3>
+
+                <ul class="mt-4 space-y-2">
+
+                    <li>
+                        <a href="#home"
+                           class="hover:text-green-400">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#machines"
+                           class="hover:text-green-400">
+                            Machinery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#ai"
+                           class="hover:text-green-400">
+                            AI Assistant
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about"
+                           class="hover:text-green-400">
+                            About
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div>
+
+                <h3 class="text-lg font-bold text-white">
+                    Contact
+                </h3>
+
+                <p class="mt-4">
+                    📧 support@agrirent.com
+                </p>
+
+                <p class="mt-2">
+                    📞 +91 7736073256
+                </p>
+
+                <p class="mt-2">
+                    📍 India
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="border-t border-gray-700
+                    text-center py-5">
+
+            <p>
+                © 2026 AgriRent. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
